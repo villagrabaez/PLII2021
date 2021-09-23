@@ -1,5 +1,6 @@
 <?php
 
+namespace App;
 class Client extends Person implements FormaPago
 {
   protected $formaPago = [
@@ -17,7 +18,7 @@ class Client extends Person implements FormaPago
     return $this->formaPago[$index];
   }
 
-  public function compra( Product $producto, Vendedor $vendedor )
+  public function compra( Product $producto, Seller $vendedor )
   {
     return "{$this->getFullName()} compro {$producto->getDescription()} y fue atendido por {$vendedor->getFullName()} y pago con {$this->getFormaPago(1)}";
   }

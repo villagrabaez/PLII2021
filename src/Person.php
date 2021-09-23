@@ -1,5 +1,6 @@
 <?php
 
+namespace App;
 abstract class Person
 {
   protected $firstName; // public, protected, private

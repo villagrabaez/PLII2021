@@ -1,5 +1,6 @@
 <?php
 
+namespace App;
 class User extends Person
 {
   public function getFullName() {
